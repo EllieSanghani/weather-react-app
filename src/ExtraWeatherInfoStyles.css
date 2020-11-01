@@ -1,0 +1,15 @@
+.extraInfo {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px;
+  background: rgb(139, 201, 201);
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+#humidity,
+#windSpeed,
+#currentWeather {
+  margin: 0px 20%;
+}

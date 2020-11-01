@@ -1,0 +1,39 @@
+.day {
+  color: rgb(14, 109, 109);
+}
+.temp {
+  color: #747474;
+}
+
+.vl {
+  display: inline-block;
+  border-left: 1px solid rgb(14, 109, 109);
+  height: 50px;
+  margin: 0px;
+}
+
+div .col-3 {
+  display: inline-grid;
+  margin: 0px auto;
+  padding: 0px;
+  width: 24%;
+}
+#forcast.week {
+  text-align: right;
+  display: inline;
+  font-size: 55px;
+  padding: 0px;
+}
+
+div .col-12 {
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0px;
+}
+#icon.emoji {
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0px;
+}

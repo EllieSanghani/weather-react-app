@@ -1,0 +1,32 @@
+.form-group {
+  margin-left: 60%;
+}
+#search-city-input {
+  width: 200px;
+  height: 40px;
+  margin: 0px;
+}
+.searchbutton,
+.location {
+  width: 45px;
+  height: 45px;
+  border-radius: 23px;
+  margin-right: 0px;
+  margin-top: 10px;
+  position: relative;
+  top: 13px;
+
+  border: 2px solid rgb(14, 109, 109);
+  background-color: white;
+  box-shadow: 2px 2px 5px rgb(177, 177, 177);
+  transition: all 200ms ease-in-out;
+}
+.searchbutton:hover {
+  background-color: rgb(14, 109, 109);
+  color: white;
+}
+
+.location:hover {
+  background-color: rgb(14, 109, 109);
+  color: white;
+}

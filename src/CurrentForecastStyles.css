@@ -1,0 +1,45 @@
+.cTemp,
+.fTemp {
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  border: none;
+  font-size: 20px;
+}
+
+.active,
+.cTemp {
+  color: #3e3e3e;
+  cursor: default;
+}
+.active,
+:hover {
+  text-decoration: none;
+}
+
+#forcast {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px;
+}
+
+#converter {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px;
+  position: relative;
+  bottom: 130px;
+}
+
+#mainIcon {
+  width: 200px;
+  height: 200px;
+}
+
+.dayTemp {
+  font-size: 100px;
+  position: relative;
+  bottom: 40px;
+}

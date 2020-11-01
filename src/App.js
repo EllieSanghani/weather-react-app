@@ -1,25 +1,22 @@
-import Weather from './Weather';
+import React from "react";
+import SearchEngine from "./SearchEngine";
+import CurrentInfo from "./CurrentInfo";
+import CurrentForecast from "./CurrentForecast";
+import ExtraWeatherInfo from "./ExtraWeatherInfo";
+import WeeklyForecast from "./WeeklyForecast";
 import './App.css';
-import Loader from 'react-loader-spinner'
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-       
-        <h1>
-          Hello
-        </h1>
-       <Weather city="Paris"/>
-       <Loader
-         type="Puff"
-         color="#00BFFF"
-         height={100}
-         width={100}
-         timeout={3000} //3 secs
- 
-      />
-      </header>
+     <SearchEngine />
+     <CurrentInfo />
+     <CurrentForecast />
+     <ExtraWeatherInfo />
+<div className="weeklyForcast">
+     <WeeklyForecast />
+    </div>
     </div>
   );
 }
