@@ -6,7 +6,7 @@ export default function CurrentForecast() {
 
       <div id="forcast">
         <img
-          src="http://openweathermap.org/img/wn/10d@2x.png"
+          src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather-icon"
           id="mainIcon" 
           className="dayEmoji"
         />
@@ -15,13 +15,13 @@ export default function CurrentForecast() {
      
       <div id="converter" >
         <button class="cTemp">
-          <a class="active" id="celcius" href="#">
+          <a class="active" id="celcius" href="#/">
             °C
           </a>
         </button>
       <small className="divider">  | </small>
         <button className="fTemp">
-          <a id="fahrenheit" href="#">
+          <a id="fahrenheit" href="#/">
             °F
           </a>
         </button>

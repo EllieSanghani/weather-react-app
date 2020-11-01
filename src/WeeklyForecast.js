@@ -8,7 +8,8 @@ return (
 
           <div class="col-3">
             <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
+              src="http://openweathermap.org/img/wn/10d@2x.png" alt="tuesday-icon"
+          
               id="icon"
               class="emoji"
             />
@@ -26,7 +27,8 @@ return (
             <div class="vl"></div> 
             <div class="col-3">
             <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
+              src="http://openweathermap.org/img/wn/10d@2x.png" alt="wednesday-icon"
+         
               id="icon"
               class="emoji"
             />
@@ -44,7 +46,8 @@ return (
             <div class="vl"></div> 
             <div class="col-3">
             <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
+              src="http://openweathermap.org/img/wn/10d@2x.png" alt="thursday-icon"
+          
               id="icon"
               class="emoji"
             />
@@ -62,7 +65,8 @@ return (
             <div class="vl"></div> 
             <div class="col-3">
             <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
+              src="http://openweathermap.org/img/wn/10d@2x.png" alt="friday-icon"
+        
               id="icon"
               class="emoji"
             />
