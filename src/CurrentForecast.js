@@ -7,14 +7,15 @@ export default function CurrentForecast() {
   const [weatherData, setWeatherData] = useState({});
   
 
+  
+
   function handleResponse(response) {
 console.log(response.data);
 setWeatherData ({
   temp : Math.round(response.data.main.temp),
   cityName : response.data.name,
 icon: "http://openweathermap.org/img/wn/10d@2x.png"
-          
-
+        
 
 })
 
@@ -47,8 +48,7 @@ return (
           <a id="fahrenheit" href="#/">
             °F
           </a>
-        </button>
-        
+        </button>   
      </div>
        </div>
   
@@ -57,7 +57,6 @@ return (
 } else {
 
   const apiKey = "087f0ef7dd56ce65c496f8db8c2c8fa0";
-  //let cityName = document.querySelector("#search-city-input").value;
   const cityName = "New York"
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 

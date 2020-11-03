@@ -8,7 +8,6 @@ const [weatherInfo, setWeatherInfo] = useState({});
 
 
   function handleResponse(response) {
-console.log(response.data);
 setWeatherInfo ({
   humidity : Math.round(response.data.main.humidity),
   wind : response.data.wind.speed,
@@ -28,30 +27,32 @@ return (
           
         <div className="col-4">
           <span id="humidity">
-            <strong>
+          <strong>
               Humidity <i className="fas fa-tint"></i>:{" "}
             </strong>{" "}
-            {weatherInfo.humidity}
+            {weatherInfo.humidity}%
           </span>
-          
+          </div>
+             <div className="col-4">
           <span id="wind-speed">
-            <strong>
+          <strong>
               {" "}
               Windspeed <i className="fas fa-wind"></i>:
             </strong>{" "}
-            {weatherInfo.wind}
+            {weatherInfo.wind} km/h
           </span>
-       
-        
+       </div>
+           <div className="col-4">
           <span id="currentWeather">
-            <strong>
+           <strong>
               {" "}
               Condition <i className="fas fa-cloud"></i>:
             </strong>{" "}
             {weatherInfo.condition}
           </span>
         </div>
-      </div>
+        </div>
+        
     </main>
   );
 }
