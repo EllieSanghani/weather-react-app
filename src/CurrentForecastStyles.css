@@ -4,7 +4,7 @@
   height: 35px;
   padding: 3px;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .active,
@@ -30,16 +30,16 @@
   text-align: center;
   padding: 0px;
   position: relative;
-  bottom: 130px;
+  bottom: 80px;
 }
 
 #mainIcon {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
 }
 
 .dayTemp {
-  font-size: 100px;
+  font-size: 80px;
   position: relative;
-  bottom: 40px;
+  bottom: 20px;
 }

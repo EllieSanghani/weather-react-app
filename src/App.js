@@ -4,9 +4,10 @@ import CurrentInfo from "./CurrentInfo";
 import CurrentForecast from "./CurrentForecast";
 import ExtraWeatherInfo from "./ExtraWeatherInfo";
 import WeeklyForecast from "./WeeklyForecast";
+import GitHubUrl from "./GitHubUrl";
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     
     <div className="App">
@@ -17,8 +18,9 @@ function App() {
 <div className="weeklyForcast">
      <WeeklyForecast />
     </div>
+    <GitHubUrl />
     </div>
   );
 }
 
-export default App;
+

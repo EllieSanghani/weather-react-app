@@ -1,17 +1,40 @@
-import React from "react";
+import React, {useState} from "react";
+import axios from "axios"
 import "./CurrentForecastStyles.css";
 
 export default function CurrentForecast() {
-  return (
+  const [ready, setReady] = useState(false);
+  const [weatherData, setWeatherData] = useState({});
+  
+
+  function handleResponse(response) {
+console.log(response.data);
+setWeatherData ({
+  temp : Math.round(response.data.main.temp),
+  cityName : response.data.name,
+icon: "http://openweathermap.org/img/wn/10d@2x.png"
+          
+
+
+})
+
+
+
+
+setReady(true);
+  }
+
+if (ready) {
+return (
 
       <div id="forcast">
         <img
-          src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather-icon"
+          src= {weatherData.icon} alt="Weather-icon"
           id="mainIcon" 
           className="dayEmoji"
         />
        
-        <strong className="dayTemp">--</strong>
+        <strong className="dayTemp">{weatherData.temp}</strong>
      
       <div id="converter" >
         <button class="cTemp">
@@ -30,4 +53,20 @@ export default function CurrentForecast() {
        </div>
   
   );
+
+} else {
+
+  const apiKey = "087f0ef7dd56ce65c496f8db8c2c8fa0";
+  //let cityName = document.querySelector("#search-city-input").value;
+  const cityName = "New York"
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(handleResponse)
+
+return "Loading...";
+}
+
+
+
+  
 }
