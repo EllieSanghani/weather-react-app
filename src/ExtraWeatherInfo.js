@@ -60,9 +60,9 @@ return (
 else {
 
   const apiKey = "087f0ef7dd56ce65c496f8db8c2c8fa0";
-  //let cityName = document.querySelector("#search-city-input").value;
-  const cityName = "London"
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+
+ 
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherInfo.city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(handleResponse)
 

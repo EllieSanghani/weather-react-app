@@ -2,15 +2,13 @@ import React, {useState} from "react";
 import axios from "axios"
 import "./CurrentForecastStyles.css";
 
-export default function CurrentForecast() {
+export default function CurrentForecast(props) {
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({});
   
 
-  
-
   function handleResponse(response) {
-console.log(response.data);
+
 setWeatherData ({
   temp : Math.round(response.data.main.temp),
   cityName : response.data.name,
@@ -18,9 +16,6 @@ icon: "http://openweathermap.org/img/wn/10d@2x.png"
         
 
 })
-
-
-
 
 setReady(true);
   }
@@ -57,8 +52,7 @@ return (
 } else {
 
   const apiKey = "087f0ef7dd56ce65c496f8db8c2c8fa0";
-  const cityName = "New York"
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(handleResponse)
 

@@ -1,7 +1,5 @@
 import React from "react";
 import SearchEngine from "./SearchEngine";
-import CurrentInfo from "./CurrentInfo";
-import CurrentForecast from "./CurrentForecast";
 import ExtraWeatherInfo from "./ExtraWeatherInfo";
 import WeeklyForecast from "./WeeklyForecast";
 import GitHubUrl from "./GitHubUrl";
@@ -11,9 +9,7 @@ export default function App() {
   return (
     
     <div className="App">
-     <SearchEngine />
-     <CurrentInfo />
-     <CurrentForecast />
+     <SearchEngine defaultCity="Dubai"/>
      <ExtraWeatherInfo />
 <div className="weeklyForcast">
      <WeeklyForecast />
