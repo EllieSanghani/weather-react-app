@@ -1,25 +1,7 @@
-import React, {useState} from "react";
-import axios from "axios"
+
 import "./ExtraWeatherInfoStyles.css";
 
-export default function ExtraWeatherInfo() { 
-  const [ready, setReady] = useState(false);
-const [weatherInfo, setWeatherInfo] = useState({});
-
-
-  function handleResponse(response) {
-setWeatherInfo ({
-  humidity : Math.round(response.data.main.humidity),
-  wind : response.data.wind.speed,
-  condition: response.data.weather[0].main,
-  cityName : response.data.name,
-
-})
-setReady(true);
-  }
-  
-
-if (ready) {
+export default function ExtraWeatherInfo(props) { 
 return (
 
     <main className="extraInfo">
@@ -30,7 +12,7 @@ return (
           <strong>
               Humidity <i className="fas fa-tint"></i>:{" "}
             </strong>{" "}
-            {weatherInfo.humidity}%
+            {props.data.humidity}%
           </span>
           </div>
              <div className="col-4">
@@ -39,7 +21,7 @@ return (
               {" "}
               Windspeed <i className="fas fa-wind"></i>:
             </strong>{" "}
-            {weatherInfo.wind} km/h
+            {props.data.wind} km/h
           </span>
        </div>
            <div className="col-4">
@@ -48,7 +30,7 @@ return (
               {" "}
               Condition <i className="fas fa-cloud"></i>:
             </strong>{" "}
-            {weatherInfo.condition}
+            {props.data.condition}
           </span>
         </div>
         </div>
@@ -56,16 +38,3 @@ return (
     </main>
   );
 }
-
-else {
-
-  const apiKey = "087f0ef7dd56ce65c496f8db8c2c8fa0";
-
- 
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherInfo.city}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(handleResponse)
-
-return "Loading...";
-
-} }
