@@ -1,19 +1,17 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 import "./CurrentForecastStyles.css";
+
 export default function CurrentForecast(props) {
   return (
     <div id="forcast">
-      <img
-        src={props.data.icon}
-        alt="Weather-icon"
-        id="mainIcon"
-        className="dayEmoji"
-      />
+      <WeatherIcon code={props.data.icon} alt={props.data.description} />
+     
       <strong className="dayTemp">{props.data.temp}</strong>
 ​
       <div id="converter">
-        <button class="cTemp">
-          <a class="active" id="celcius" href="#/">
+        <button className="cTemp">
+          <a className="active" id="celcius" href="#/">
             °C
           </a>
         </button>

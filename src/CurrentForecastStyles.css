@@ -19,7 +19,7 @@
 
 #forcast {
   display: block;
-  margin: 0 auto;
+  margin: 25px;
   text-align: center;
   padding: 0px;
 }
@@ -30,16 +30,10 @@
   text-align: center;
   padding: 0px;
   position: relative;
-  bottom: 80px;
-}
-
-#mainIcon {
-  width: 120px;
-  height: 120px;
+  bottom: 50px;
 }
 
 .dayTemp {
   font-size: 80px;
-  position: relative;
-  bottom: 20px;
+  padding-left: 20px;
 }

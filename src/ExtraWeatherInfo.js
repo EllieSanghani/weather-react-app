@@ -1,4 +1,4 @@
-
+import React from "react";
 import "./ExtraWeatherInfoStyles.css";
 
 export default function ExtraWeatherInfo(props) { 

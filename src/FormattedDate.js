@@ -45,7 +45,7 @@ let date = props.date.getDate();
 
 
 return ( 
-<div class="currentDate">
+<div className="currentDate">
     {hours}:{minutes} {day}, {month} {date} {year} 
 </div>);
 

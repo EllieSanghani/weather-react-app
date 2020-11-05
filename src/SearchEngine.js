@@ -21,14 +21,15 @@ export default function SearchEngine(props) {
     setCity(event.target.value);
   }
   function handleResponse(response) {
+    console.log(response.data.weather[0].icon)
     setWeatherData({
       temp: Math.round(response.data.main.temp),
       cityName: response.data.name,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
       humidity : Math.round(response.data.main.humidity),
-  wind : response.data.wind.speed,
-  condition: response.data.weather[0].main,
+      wind : response.data.wind.speed,
+      condition: response.data.weather[0].main,
   
     });
     setReady(true);
@@ -41,7 +42,7 @@ export default function SearchEngine(props) {
             <input
               type="text"
               placeholder="Enter City"
-              autocomplete="off"
+              autoComplete="off"
               id="search-city-input"
               onChange={handleCityChange}
             />
