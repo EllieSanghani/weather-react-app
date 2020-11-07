@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CurrentForecast from "./CurrentForecast";
 import FormattedDate from "./FormattedDate";
 import ExtraWeatherInfo from "./ExtraWeatherInfo";
+import WeeklyForecast from "./WeeklyForecast";
 import axios from "axios";
 import "./SearchEngineStyles.css";
 export default function SearchEngine(props) {
@@ -32,6 +33,7 @@ export default function SearchEngine(props) {
       condition: response.data.weather[0].main,
   
     });
+
     setReady(true);
   }
   if (ready) {
@@ -60,6 +62,9 @@ export default function SearchEngine(props) {
         </div>
         <CurrentForecast data={weatherData} />
          <ExtraWeatherInfo data={weatherData}/>
+         <div className="weeklyForcast">
+         <WeeklyForecast data={weatherData} />
+          </div>
       </div>
     );
   } else {

@@ -47,3 +47,12 @@
 .currentInfo {
   margin: 20px 20px 20px 20px;
 }
+
+.weeklyForcast {
+  display: block;
+  margin: 15px auto;
+  border: 1px solid rgb(14, 109, 109);
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 97%;
+}

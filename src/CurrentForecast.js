@@ -45,7 +45,7 @@ return (
 } else {
 
   let celcius = props.data.temp;
-  let fahrenheit = (celcius * 9 / 5) + 32;
+  let fahrenheit = Math.round((celcius * 9 / 5) + 32);
   return (
 
 <div id="forcast">

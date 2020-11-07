@@ -31,7 +31,7 @@ div .col-12 {
   margin: 0 auto;
   padding: 0px;
 }
-#icon.emoji {
+canvas {
   text-align: center;
   display: inline-block;
   margin: 0 auto;
