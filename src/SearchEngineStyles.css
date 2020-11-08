@@ -5,29 +5,27 @@
   width: 200px;
   height: 40px;
   margin: 0px;
+  font-size: 20px;
 }
-.searchbutton,
-.location {
+.searchbutton {
   width: 45px;
   height: 45px;
   border-radius: 23px;
-  margin-right: 0px;
   margin-top: 10px;
-  position: relative;
-  top: 13px;
-
-  border: 2px solid rgb(14, 109, 109);
+  font-size: 20px;
+  padding: 0px;
+  border: 2px solid rgb(84, 173, 173);
   background-color: white;
   box-shadow: 2px 2px 5px rgb(177, 177, 177);
   transition: all 200ms ease-in-out;
 }
-.searchbutton:hover {
-  background-color: rgb(14, 109, 109);
-  color: white;
+
+img {
+  width: 30px;
 }
 
-.location:hover {
-  background-color: rgb(14, 109, 109);
+.searchbutton:hover {
+  background-color: rgb(84, 173, 173);
   color: white;
 }
 
@@ -51,7 +49,7 @@
 .weeklyForcast {
   display: block;
   margin: 15px auto;
-  border: 1px solid rgb(14, 109, 109);
+  border: 1px solid rgb(84, 173, 173);
   padding: 15px 20px;
   border-radius: 10px;
   width: 97%;

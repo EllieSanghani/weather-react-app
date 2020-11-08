@@ -49,11 +49,9 @@ export default function SearchEngine(props) {
               onChange={handleCityChange}
             />
             <button type="submit" value="Search" className="searchbutton">
-              <i className="fas fa-search"></i>
+             <img src = "https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png" alt ="search icon"/>
             </button>
-            <button className="location">
-              <i className="fas fa-search"></i>
-            </button>
+          
           </div>
         </form>
         <div className="CurrentInfo">

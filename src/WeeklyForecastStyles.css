@@ -7,21 +7,28 @@
 
 .vl {
   display: inline-block;
-  border-left: 1px solid rgb(14, 109, 109);
-  height: 50px;
-  margin: 0px;
+  border-left: 2px solid rgb(14, 109, 109);
+  height: 100px;
+  margin-bottom: 35px;
 }
 
 div .col-3 {
-  display: inline-grid;
+  display: inline-block;
   margin: 0px auto;
   padding: 0px;
-  width: 24%;
+  width: 19%;
 }
 #forcast.week {
   text-align: right;
   display: inline;
   font-size: 55px;
+  padding: 0px;
+}
+
+.forecastPreview {
+  text-align: center;
+  display: inline;
+  font-size: 20px;
   padding: 0px;
 }
 
