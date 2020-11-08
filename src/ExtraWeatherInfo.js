@@ -10,7 +10,8 @@ return (
         <div className="col-4">
           <span id="humidity">
           <strong>
-              Humidity <i className="fas fa-tint"></i>:{" "}
+              Humidity 
+              <img src = "https://image.flaticon.com/icons/png/512/63/63123.png" alt ="humidity icon" className="extraIcon"/>:{" "}
             </strong>{" "}
             {props.data.humidity}%
           </span>
@@ -19,7 +20,8 @@ return (
           <span id="wind-speed">
           <strong>
               {" "}
-              Windspeed <i className="fas fa-wind"></i>:
+              Windspeed 
+               <img src = "https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/2468012341543238955-512.png" alt ="wind icon" className="extraIcon"/>:
             </strong>{" "}
             {props.data.wind} km/h
           </span>
@@ -27,8 +29,7 @@ return (
            <div className="col-4">
           <span id="currentWeather">
            <strong>
-              {" "}
-              Condition <i className="fas fa-cloud"></i>:
+              Condition<img src = "https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/3426801271548329610-512.png" alt ="conditions icon" className="extraIcon"/>:
             </strong>{" "}
             {props.data.condition}
           </span>

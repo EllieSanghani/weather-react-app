@@ -20,3 +20,10 @@ div .col-4 {
   padding: 0px;
   width: 30%;
 }
+
+img.extraIcon {
+  padding-left: 2px;
+  width: 5%;
+  position: relative;
+  top: 3px;
+}

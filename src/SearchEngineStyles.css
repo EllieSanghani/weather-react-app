@@ -1,23 +1,33 @@
 .form-group {
-  margin-left: 60%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 #search-city-input {
-  width: 200px;
-  height: 40px;
+  width: 500px;
+  height: 35px;
   margin: 0px;
-  font-size: 20px;
+  font-size: 16px;
+  border: 2px solid rgb(84, 173, 173);
+  border-radius: 10px;
+  padding-left: 10px;
+  text-align: center;
 }
 .searchbutton {
   width: 45px;
-  height: 45px;
-  border-radius: 23px;
-  margin-top: 10px;
+  height: 41px;
+
+  margin-top: 15px;
   font-size: 20px;
   padding: 0px;
   border: 2px solid rgb(84, 173, 173);
   background-color: white;
   box-shadow: 2px 2px 5px rgb(177, 177, 177);
   transition: all 200ms ease-in-out;
+  position: relative;
+  top: 7px;
+  left: -20px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 img {
